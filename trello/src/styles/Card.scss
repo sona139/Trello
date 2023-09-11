@@ -1,0 +1,132 @@
+
+/* Card */
+.card {
+	display: inline-block;
+	width: 272px;
+	background-color: #f1f2f4;
+	padding: 0 8px;
+	border-radius: 12px;
+	box-shadow: 0 1px 1px #091e4240, 0 0 1px #091e424f;
+	max-height: 100%;
+	height: fit-content;
+
+	/* Card header */
+	.card-header {
+		padding: 14px 6px 6px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		.card-title {
+			background-color: transparent;
+			line-height: 20px;
+			border-radius: 3px;
+			font-weight: 600;
+			font-size: 16px;
+			color: #172b4d;
+			padding: 4px 8px 4px 12px;
+			cursor: pointer;
+		
+			&:focus {
+				border: 2px solid #5da1ff;
+				cursor: text;
+			}
+		}
+
+		.card-menu-btn {
+
+		}
+	}
+
+	/* Card body */
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+		padding: 8px;
+		max-height: calc(100vh - 122px);
+	}
+
+	.card-edit-menu {
+		background-color: #0009;
+		border-radius: 3px;
+		color: #c7d1db;
+		padding: 6px 12px 6px 18px;
+		margin-bottom: 4px;
+		font-size: 14px;
+		transition-duration: 0.2s;
+		width: fit-content;
+		cursor: pointer;
+
+		&:hover {
+			color: #fff;
+			background-color: #000c;
+			transform: translateX(5px);
+		}
+	}
+
+	/* Card footer */
+	.card-footer {
+		padding: 0 0 8px;
+		
+		.card-add-btn {
+			margin-left: 8px;
+			padding: 4px 8px 4px 6px;
+			display: flex;
+			align-items: center;
+			color: #44546f;
+			font-size: 14px;
+			width: 224px;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #091e4224;
+			}
+		}
+		
+		.card-add-icon {
+			width: 20px;
+			height: 20px;
+			margin-right: 6px;
+		}
+		
+		.card-create-btn {
+		
+		}
+	}
+}
+
+.card-item {
+	border-radius: 8px;
+	background-color: #fff;
+	box-shadow: 0 1px 1px #091e4240,0 0 1px #091e424f;
+	padding: 8px 8px 8px 12px;
+	color: #172b4d;
+	line-height: 20px;
+	font-size: 14px;
+	word-wrap: break-word;
+	width: 100%;
+	max-width: 240px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #f1f2f4;
+
+		& > .edit-icon {
+			display: flex;
+		}
+	}
+}
+
+.dragging {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	transform: rotate(5deg);
+	pointer-events: none;
+	width: 272px;
+}

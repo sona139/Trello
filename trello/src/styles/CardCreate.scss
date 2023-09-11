@@ -1,0 +1,47 @@
+.card-create {
+	width: 272px;
+	height: 48px;
+	padding: 14px 16px;
+	color: #fff;
+	background-color: #ffffff3d;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #A6C5E229;
+	}
+}
+
+.card-creating {
+	width: 272px;
+	padding: 8px;
+	background-color: #ebecf0;
+	border-radius: 12px;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+
+	input {
+		background-color: transparent;
+		width: 100%;
+		padding: 8px 12px;
+		font-weight: 600;
+		height: 32px;
+		font-size: 16px;
+		border-radius: 3px;
+		margin-bottom: 10px;
+
+		&:focus {
+			border: 2px solid #5da1ff;
+			cursor: text;
+		}
+
+		&::placeholder {
+			font-weight: normal;
+			font-size: 14px;
+		}
+	}
+}

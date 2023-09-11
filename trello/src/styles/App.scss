@@ -1,0 +1,103 @@
+.app {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(205, 90, 145);
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 10px;
+	padding: 12px;
+	width: fit-content;
+	min-width: 100vw;
+
+	::-webkit-scrollbar-thumb {
+		background-color: #c5c9d1;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: #091e420f;
+	}
+}
+
+textarea {
+	width: 100%;
+	height: auto;
+	padding-bottom: 22px;
+	margin-bottom: 8px;
+	padding: 8px 8px 24px 12px;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	resize: none;
+	box-shadow: 0 1px 1px #091e4240,0 0 1px #091e424f;
+	font-size: 14px;
+	cursor: unset;
+
+	&:hover {
+		cursor: unset;
+		background-color: #fff;
+	}
+}
+
+.close-btn {
+	width: 32px;
+	height: 32px;
+	margin-left: 4px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.add-icon {
+	height: 20px;
+	width: 20px;
+	font-size: 24px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.btn-primary {
+	padding: 6px 12px;
+	line-height: 24px;
+	font-size: 14px;
+	border-radius: 3px;
+	background-color: #0c66e4;
+	color: #fff;
+	cursor: pointer;
+}
+
+.edit-icon {
+	width: 32px;
+	height: 32px;
+	border-radius: 6px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	background-color: #f1f2f4;
+	opacity: .8;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #dcdfe4;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #ae4d7b;
+
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #cf94b0;
+}
